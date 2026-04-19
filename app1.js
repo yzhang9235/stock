@@ -56,7 +56,7 @@ http.createServer(async function(req, res) {
 
         res.end();
     }
+const PORT = process.env.PORT || 8080;
+}).listen(PORT);
 
-}).listen(8080);
-
-console.log("Server running at http://localhost:8080");
+console.log(`Server running at http://localhost:${PORT}`);
