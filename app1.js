@@ -2,6 +2,7 @@ var http = require("http");
 var url = require("url");
 var fs = require("fs");
 const { MongoClient } = require('mongodb');
+const PORT = process.env.PORT || 8080;
 
 const connStr = "mongodb+srv://elaine:test123@cluster0.cwne72v.mongodb.net/";
 const client = new MongoClient(connStr);
@@ -56,7 +57,7 @@ http.createServer(async function(req, res) {
 
         res.end();
     }
-const PORT = process.env.PORT || 8080;
+
 }).listen(PORT);
 
 console.log(`Server running at http://localhost:${PORT}`);
