@@ -1,0 +1,9 @@
+<form method = 'get' action = '/process'>
+Search: <input type = 'text' name = 'search'><br>
+
+<input type = 'radio' name = 'type' value = 'ticker'> Ticker
+<input type = 'radio' name = 'type' value = 'name'> Company Name
+
+<br>
+<input type = 'submit'>
+</form>
